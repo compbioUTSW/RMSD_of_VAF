@@ -46,12 +46,12 @@ foreach my $pileupFile (@pileupFileList) {
 		}
 	}
 	close($reader);
-	foreach my $index1 (0 .. $#distanceMatrix) {
-		foreach my $index2 (0 .. $#distanceMatrix) {
-			if($index1 > $index2) {
-				$distanceMatrix[$index1]->[$index2] = sqrt($distanceMatrix[$index1]->[$index2] / $number);
-				$distanceMatrix[$index2]->[$index1] = $distanceMatrix[$index1]->[$index2];
-			}
+}
+foreach my $index1 (0 .. $#distanceMatrix) {
+	foreach my $index2 (0 .. $#distanceMatrix) {
+		if($index1 > $index2) {
+			$distanceMatrix[$index1]->[$index2] = sqrt($distanceMatrix[$index1]->[$index2] / $number);
+			$distanceMatrix[$index2]->[$index1] = $distanceMatrix[$index1]->[$index2];
 		}
 	}
 }
