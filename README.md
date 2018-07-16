@@ -1,3 +1,5 @@
+# Please refer https://github.com/jiwoongbio/RMSD_of_VAF instead.
+
 Description
 -----------
 This folder contains a script that can be used to calculate the root-mean-square deviation (RMSD) of variant-allele frequencies between two samples.  
